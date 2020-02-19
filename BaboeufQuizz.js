@@ -148,7 +148,7 @@ if(!localStorage.getItem("localList")) {
 
 list = JSON.parse(localStorage.getItem("localList"));
 if(!list) {
-    list = listToStore;
+    list = listOfQuestions;
 }
 
 // S'il reste 10 questions ou moins dans la liste, remet toutes les questions.
