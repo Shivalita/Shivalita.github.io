@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="BaboeufQuizz.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee&display=swap" rel="stylesheet"> 
+    <title>Baboeuf Quizz</title>
+</head>
+
+<body>
+    <div id="all">
+
+        <div id="title" class="text">
+            <h2>BABOEUF QUIZZ</h2>
+        </div>
+
+        <div id="presentation" class="text" style="display:block">
+
+            <p>Ton chat prend des airs supérieurs ? Il te fait sentir que tu es chez lui, que ta présence est tout juste tolérée, et qu'il t'a à l'oeil ? 
+            <br>Normal, il se croit plus malin que toi. Pour lui, t'es un gros animal stupide, un croisement entre un babouin et un boeuf... Un baboeuf.
+            <br>Pour qu'il arrête enfin de te faire regarder de travers, une seule solution : lui prouver que tu n'es pas si crétin tout compte fait !</p>
+                    
+            <p>Tu vas répondre à 10 questions de culture générale. Une seule réponse juste à chaque fois, une bonne réponse rapporte 1 point.
+            <br>Si t'obtiens un bon score, tu remporteras un truc complètement dingue : le respect de ton chat. Oui, carrément ! Ca n'a pas de prix... 
+            <br>Alors vas-y, impressionne-le ! Puise ta force dans son regard méprisant, et montre-lui qui est le plus malin... Baboeuf lui-même !</p>
+            
+        </div>
+
+        <div id="startButton" onclick="startGame()">
+            <button>C'est parti !</button>
+        </div>
+
+
+        <div id="header" class="text">
+
+            <div id="counter" style="display:none">
+                <span>1/10</span>
+            </div>
+
+            <div id="score" style="display:none">
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <div id="results" class="text format" style="visibility:hidden">
+
+            <div id=winLoose style="display:none">
+                <span></span>
+            </div>
+
+            <div id="report">
+                <span></span> 
+            </div>
+
+        </div>
+
+
+        <img id="mainPicture" src="images/main.jpg" alt="" class="mainImg">
+        <img id="picture" src="" alt="" alt="" class="img" style="display:none">
+
+        <div id="caption" class="text">
+            <span></span>
+        </div>
+
+
+        <div id="question" class="text format" style="display:none">
+            <span></span>
+        </div>
+
+        <div id="choices" class="text format" style="display:none">
+
+            <input type="radio" id="choice1" name="options" value=0> <label for="choice1"></label>
+            <br><input type="radio" id="choice2" name="options" value=1> <label for="choice2"></label>
+            <br><input type="radio" id="choice3" name="options" value=2> <label for="choice3"></label>
+
+        </div>
+
+
+        <div id="validationButton" onclick="game()" style="display:none">
+            <input type="button" value="Valider" id="validateButton"></input> 
+        </div>
+
+    </div>
+
+    
+    <script src="BaboeufQuizz.js"></script>
+
+</body>
+
+</html>
