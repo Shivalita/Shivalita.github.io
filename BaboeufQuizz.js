@@ -1,6 +1,6 @@
 /* Ceci est mon tout premier projet. Avant ça, je n'ai fait que de petits exercices, rien d'aussi "complexe" et de loin (on se moque pas, merci !).
 Le code est sûrement brouillon, voire bizarre, et pas du tout optimisé... Mais je l'ai fait à ma manière, avec les connaissances dont je disposais.
-J'espère que mes commentaires vous aideront à y voir plus clair, et que vous serez indulgent envers la débutante que je suis. Bonne lecture ^^ */
+J'espère que mes commentaires vous aideront à y voir plus clair, bonne lecture ^^ */
 
 
 /* Crée une classe pour les questions avec comme propriétés :
@@ -194,8 +194,9 @@ function startGame() {
     document.getElementById("counter").style.display = "block";
     document.getElementById("score").innerHTML = "SCORE : 0";
 
+    // Change l'image et met une légende.
     changeImage("images/judgy");
-    caption.innerHTML="Minou te regarde. Et te juge.";
+    caption.innerHTML="C'est parti ! Minou te regarde. Et te juge.";
 
     // Définit une 1ère question.
     defineQuestion();
@@ -203,7 +204,6 @@ function startGame() {
 
 
 var goodAnswerDisplay;
-
 
 function lowerCaseAnswer(answer) {
 
@@ -217,7 +217,7 @@ function lowerCaseAnswer(answer) {
     }
 }
 
-// Modifie la source de l'image selon la catégorie à afficher.
+// Modifie la source de l'image avec une image aléatoire selon la catégorie à afficher.
 function changeImage(imgCategory) {
     document.getElementById("picture").src = imgCategory + Math.round(Math.random()*15) + ".jpg";
 }
